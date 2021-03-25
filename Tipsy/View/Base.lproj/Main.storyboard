@@ -94,7 +94,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ypB-pl-mYK">
                                                 <rect key="frame" x="80" y="192" width="214" height="29"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSy-Yc-886">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSy-Yc-886">
                                                         <rect key="frame" x="0.0" y="0.0" width="93" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="57e-FD-UCK"/>
@@ -104,7 +104,7 @@
                                                         <color key="textColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="haq-5m-pqs">
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="haq-5m-pqs">
                                                         <rect key="frame" x="120" y="0.0" width="94" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="lc0-jW-BEi"/>
@@ -204,6 +204,7 @@
                         <outlet property="secondTip" destination="7y6-Kf-yF0" id="H97-gb-asx"/>
                         <outlet property="stepperCountLabel" destination="bSy-Yc-886" id="FFY-PO-dqx"/>
                         <outlet property="thirdTip" destination="UtR-dU-EKt" id="7v3-gz-KoT"/>
+                        <segue destination="Dnf-m2-FPm" kind="presentation" identifier="goToResult" id="fGz-VY-gag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -215,7 +216,7 @@
             <objects>
                 <viewController id="Dnf-m2-FPm" customClass="ResultViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DNW-gk-FsX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCe-Te-efL">
@@ -252,7 +253,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzn-9K-6hu">
-                                <rect key="frame" x="107" y="808" width="200" height="54"/>
+                                <rect key="frame" x="107" y="754" width="200" height="54"/>
                                 <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="0Lh-eY-3GO"/>
@@ -293,8 +294,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="moneyFromPersonLabel" destination="uLJ-ii-hft" id="kOm-eL-P6g"/>
-                        <outlet property="resultLabel" destination="HGt-bn-sCv" id="Ai4-qv-YX9"/>
+                        <outlet property="moneyFromPersonLabel" destination="HGt-bn-sCv" id="Abe-qB-DvL"/>
+                        <outlet property="resultLabel" destination="uLJ-ii-hft" id="KVj-yB-SQH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLi-Eb-NGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
